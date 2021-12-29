@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>397873427576-h9she879c3rtortssq3kvjm9utup4ke7.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.397873427576-h9she879c3rtortssq3kvjm9utup4ke7</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCXMz3AHf1AfTVhP3AW17PVvzETQK_gYks</string>
+	<key>GCM_SENDER_ID</key>
+	<string>397873427576</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.krzysztofwozniak.pizzaWarszawa</string>
+	<key>PROJECT_ID</key>
+	<string>pizza-warszawa-7cf57</string>
+	<key>STORAGE_BUCKET</key>
+	<string>pizza-warszawa-7cf57.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:397873427576:ios:e2360606ed5138254ea98d</string>
+</dict>
+</plist>

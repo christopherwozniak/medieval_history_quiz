@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "743463475255",
+    "project_id": "medieval-history-quiz",
+    "storage_bucket": "medieval-history-quiz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:743463475255:android:e41af8941ce2b85b1c87b2",
+        "android_client_info": {
+          "package_name": "com.krzysztofwozniak.medieval_history_quiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "743463475255-1n127ukhc6cmve08lfbmb477t8msc44j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBC5IncdXRBhd09s-qjhhv6hmdeJS-Pv3s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "743463475255-1n127ukhc6cmve08lfbmb477t8msc44j.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "743463475255-rtkpjtfun9abhtbvpmelmdqgo58pav5q.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.krzysztofwozniak.medievalHistoryQuiz"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
