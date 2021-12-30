@@ -1,6 +1,8 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:medieval_history_quiz/app/home/home_page.dart';
+import 'package:medieval_history_quiz/app/login/login_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -34,19 +36,9 @@ class FirstPageQuiz extends StatelessWidget {
         builder: (context, snapshot) {
           final user = snapshot.data;
           if (user == null) {
-            return const Scaffold(
-              body: Center(
-                child: Text('Jesteś niezalogowany'),
-              ),
-            );
+            return const LoginPage();
           }
-          return Center(
-            child: Scaffold(
-              appBar: AppBar(
-                title: const Text('Medieval History Quiz'),
-              ),
-            ),
-          );
+          return HomePage(user: user);
         });
   }
 }
