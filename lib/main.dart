@@ -6,7 +6,7 @@ import 'package:medieval_history_quiz/app/login/login_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  Firebase.initializeApp();
+  await Firebase.initializeApp();
   runApp(const MyApp());
 }
 
@@ -36,7 +36,7 @@ class FirstPageQuiz extends StatelessWidget {
         builder: (context, snapshot) {
           final user = snapshot.data;
           if (user == null) {
-            return const LoginPage();
+            return LoginPage();
           }
           return HomePage(user: user);
         });
