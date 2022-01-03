@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:medieval_history_quiz/app/home/add_opinion/add_opinion_page_content.dart';
+import 'package:medieval_history_quiz/app/home/medieval_levels/medieval_levels_page_content.dart';
+import 'package:medieval_history_quiz/app/home/my_account/my_account_page_content.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({
@@ -18,32 +21,17 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Center(child: Text('Medieval History Quiz')),
+      ),
       body: Builder(builder: (context) {
         if (currentIndex == 0) {
-          return const Center(
-            child: Text('Sen to dobry pomysł nieprawdaz?'),
-          );
+          return const MedievalLevelsPageContent();
         }
         if (currentIndex == 1) {
-          return const Center(
-            child: Text('Dwa'),
-          );
+          return const AddOpinionPageContent();
         }
-        return Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text('Witaj Odkrywco! Twoja domena to ${widget.user.email}'),
-              const SizedBox(height: 20),
-              ElevatedButton(
-                onPressed: () {
-                  FirebaseAuth.instance.signOut();
-                },
-                child: const Text('Wyloguj się'),
-              ),
-            ],
-          ),
-        );
+        return MyAccountPageContent(email: widget.user.email);
       }),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: currentIndex,
@@ -55,9 +43,9 @@ class _HomePageState extends State<HomePage> {
         items: const [
           BottomNavigationBarItem(
               icon: Icon(
-                Icons.king_bed,
+                Icons.swap_horiz_sharp,
               ),
-              label: 'Idź spać'),
+              label: 'Wybierz level'),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.add,
