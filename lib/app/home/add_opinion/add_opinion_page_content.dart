@@ -14,6 +14,7 @@ class _AddOpinionPageContentState extends State<AddOpinionPageContent> {
   var basicName = '';
   var mediumName = '';
   var hardName = '';
+  var opinion = 3.0;
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -44,13 +45,25 @@ class _AddOpinionPageContentState extends State<AddOpinionPageContent> {
                   hardName = newValue;
                 });
               }),
+          Slider(
+            onChanged: (newValue) {
+              setState(() {
+                opinion = newValue;
+              });
+            },
+            value: opinion,
+            min: 1.0,
+            max: 6.0,
+            divisions: 10,
+            label: opinion.toString(),
+          ),
           ElevatedButton(
             onPressed: () {
               FirebaseFirestore.instance.collection('levels').add({
                 'basic': basicName,
                 'medium': mediumName,
                 'hard': hardName,
-                'opinion': 3.0,
+                'opinion': opinion,
               });
             },
             child: const Text('Dodaj opinię'),
