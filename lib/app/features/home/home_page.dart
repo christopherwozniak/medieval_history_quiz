@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:medieval_history_quiz/app/home/add_opinion/add_opinion_page_content.dart';
-import 'package:medieval_history_quiz/app/home/medieval_levels/medieval_levels_page_content.dart';
-import 'package:medieval_history_quiz/app/home/my_account/my_account_page_content.dart';
+import 'package:medieval_history_quiz/app/features/home/add_opinion/add_opinion_page_content.dart';
+import 'package:medieval_history_quiz/app/features/home/medieval_levels/medieval_levels_page_content.dart';
+import 'package:medieval_history_quiz/app/features/home/my_account/my_account_page_content.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({

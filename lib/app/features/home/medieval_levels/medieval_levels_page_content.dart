@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:medieval_history_quiz/app/home/medieval_levels/cubit/medieval_levels_cubit.dart';
+import 'package:medieval_history_quiz/app/features/home/medieval_levels/cubit/medieval_levels_cubit.dart';
 
 class MedievalLevelsPageContent extends StatelessWidget {
   const MedievalLevelsPageContent({
