@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:bloc/bloc.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:meta/meta.dart';
 
 part 'medieval_levels_state.dart';
@@ -22,6 +23,7 @@ class MedievalLevelsCubit extends Cubit<MedievalLevelsState> {
       const MedievalLevelsState(
           documents: [], errorMessage: '', isLoading: true),
     );
+
     _streamSubscription = FirebaseFirestore.instance
         .collection('levels')
         .orderBy('opinion', descending: true)
